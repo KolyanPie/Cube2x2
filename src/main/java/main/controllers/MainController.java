@@ -25,12 +25,13 @@ public class MainController {
             str = str.toUpperCase();
             if (str.length() <= 2) {
                 CONTROLLER.controlMove(cube, str);
-            } else if (str.equals("PRINT")) {
                 if (frame != null) {
-                    frame.dispose();
-                    frame = null;
+                    frame.repaint();
                 }
-                frame = new CubeFrame(cube);
+            } else if (str.equals("PRINT")) {
+                if (frame == null || !frame.isEnabled() || !frame.isActive()) {
+                    frame = new CubeFrame(cube);
+                }
             } else {
                 System.out.println("String length is incorrect!");
             }

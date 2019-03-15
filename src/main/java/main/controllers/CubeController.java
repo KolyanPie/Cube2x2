@@ -68,26 +68,31 @@ public class CubeController {
 
     /**
      * Меняем местами цвета граней вокруг одной плоскости
-     * (только для боковых плоскостей)
+     * (для плоскостей кроме левой и правой)
      */
-    private void rotateSidePart(Cube cube,
-                               ElementColor[] right,
-                               ElementColor[] left
-    ) {
-        ElementColor[] up = cube.getUp();
-        ElementColor[] down = cube.getDown();
-        ElementColor temp_left = up[3];
-        ElementColor temp_right = up[2];
-        // swapping:
-        up[2] = left[1];
-        up[3] = left[2];
-        left[1] = down[0];
-        left[2] = down[1];
 
-        down[0] = right[3];
-        down[1] = right[0];
-        right[0] = temp_left;
-        right[3] = temp_right;
+    private void rotateUFBD(Cube cube,
+                            ElementColor[] up,
+                            ElementColor[] down,
+                            int lt,
+                            int lb,
+                            int rt,
+                            int rb
+    ) {
+        ElementColor[] left = cube.getLeft();
+        ElementColor[] right = cube.getRight();
+        ElementColor temp_left = up[2];
+        ElementColor temp_right = up[3];
+        // swapping:
+        up[2] = left[lb];
+        up[3] = left[lt];
+        left[lt] = down[0];
+        left[lb] = down[1];
+
+        down[0] = right[rb];
+        down[1] = right[rt];
+        right[rb] = temp_right;
+        right[rt] = temp_left;
     }
 
     // -------------------------------Повороты граней куба по часовой стрелке------------------------------------
@@ -98,10 +103,10 @@ public class CubeController {
             return;
         }
         moveFlatness(cube.getFront());
-        ElementColor[] right = cube.getRight();
-        ElementColor[] left = cube.getLeft();
+        ElementColor[] up = cube.getUp();
+        ElementColor[] down = cube.getDown();
 
-        rotateSidePart(cube, right, left);
+        rotateUFBD(cube, up, down, 1, 3, 0, 2);
     }
 
     private void moveCubeBack(Cube cube, boolean isClockWise) {
@@ -110,10 +115,10 @@ public class CubeController {
             return;
         }
         moveFlatness(cube.getBack());
-        ElementColor[] right = cube.getLeft();
-        ElementColor[] left = cube.getRight();
+        ElementColor[] up = cube.getDown();
+        ElementColor[] down = cube.getUp();
 
-        rotateSidePart(cube, right, left);
+        rotateUFBD(cube, up, down, 2, 0, 3, 1);
     }
 
     private void moveCubeLeft(Cube cube, boolean isClockWise) {
@@ -121,11 +126,21 @@ public class CubeController {
             moveCubeLeft(cube);
             return;
         }
-        moveFlatness(cube.getLeft());
-        ElementColor[] right = cube.getFront();
-        ElementColor[] left = cube.getBack();
-
-        rotateSidePart(cube, right, left);
+        moveFlatness(cube.getRight());
+        ElementColor[] up = cube.getUp();
+        ElementColor[] front = cube.getFront();
+        ElementColor[] down = cube.getDown();
+        ElementColor[] back = cube.getBack();
+        ElementColor temp_left = up[0];
+        ElementColor temp_right = up[2];
+        up[0] = back[0];
+        up[2] = back[2];
+        back[0] = down[0];
+        back[2] = down[2];
+        down[0] = front[0];
+        down[2] = front[2];
+        front[0] = temp_left;
+        front[2] = temp_right;
     }
 
     private void moveCubeRight(Cube cube, boolean isClockWise) {
@@ -134,15 +149,22 @@ public class CubeController {
             return;
         }
         moveFlatness(cube.getRight());
-        ElementColor[] right = cube.getBack();
-        ElementColor[] left = cube.getFront();
-
-        rotateSidePart(cube, right, left);
+        ElementColor[] up = cube.getUp();
+        ElementColor[] front = cube.getFront();
+        ElementColor[] down = cube.getDown();
+        ElementColor[] back = cube.getBack();
+        ElementColor temp_left = up[3];
+        ElementColor temp_right = up[1];
+        up[3] = front[3];
+        up[1] = front[1];
+        front[3] = down[3];
+        front[1] = down[1];
+        down[3] = back[3];
+        down[1] = back[1];
+        back[3] = temp_left;
+        back[1] = temp_right;
     }
 
-    /**
-     * ВЫЗЫВАЙТЕ САНИТАРОВ!
-     */
     private void moveCubeUp(Cube cube, boolean isClockWise) {
         if (!isClockWise) {
             moveCubeUp(cube);
@@ -150,21 +172,9 @@ public class CubeController {
         }
         moveFlatness(cube.getUp());
         ElementColor[] up = cube.getBack();
-        ElementColor[] right = cube.getRight();
         ElementColor[] down = cube.getFront();
-        ElementColor[] left = cube.getLeft();
 
-        ElementColor temp_left = up[1];
-        ElementColor temp_right = up[0];
-        up[0] = right[1];
-        up[1] = right[2];
-        left[1] = down[0];
-        left[2] = down[1];
-
-        down[0] = right[0];
-        down[1] = right[1];
-        right[0] = temp_right;
-        right[1] = temp_left;
+        rotateUFBD(cube, up, down, 0, 1, 1, 0);
     }
 
     private void moveCubeDown(Cube cube, boolean isClockWise) {
@@ -172,23 +182,11 @@ public class CubeController {
             moveCubeDown(cube);
             return;
         }
-        moveFlatness(cube.getFront());
+        moveFlatness(cube.getDown());
         ElementColor[] up = cube.getFront();
-        ElementColor[] right = cube.getRight();
         ElementColor[] down = cube.getBack();
-        ElementColor[] left = cube.getLeft();
 
-        ElementColor temp_left = up[3];
-        ElementColor temp_right = up[2];
-        up[2] = left[2];
-        up[3] = left[3];
-        left[2] = down[2];
-        left[3] = down[3];
-
-        down[2] = right[2];
-        down[3] = right[3];
-        right[2] = temp_right;
-        right[3] = temp_left;
+        rotateUFBD(cube, up, down, 3, 2, 2, 3);
     }
 
     // --------------------------------Против часовой стрелки----------------------------------------------

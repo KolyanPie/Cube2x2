@@ -16,12 +16,12 @@ public class Cube {
      * 2, 3
      */
     public Cube() {
-        front = new ElementColor[]  { WHITE, WHITE, WHITE, WHITE };
-        up = new ElementColor[]    { RED, RED, RED, RED };
-        right = new ElementColor[]  { GREEN, GREEN, GREEN, GREEN };
-        down = new ElementColor[]    { ORANGE, ORANGE, ORANGE, ORANGE };
-        left = new ElementColor[]   { BLUE, BLUE, BLUE, BLUE };
-        back = new ElementColor[]   { YELLOW, YELLOW, YELLOW, YELLOW };
+        front = new ElementColor[]  { GREEN, GREEN, GREEN, GREEN };
+        up = new ElementColor[]    { WHITE, WHITE, WHITE, WHITE };
+        right = new ElementColor[]  { RED, RED, RED, RED };
+        down = new ElementColor[]    { YELLOW, YELLOW, YELLOW, YELLOW };
+        left = new ElementColor[]   { ORANGE, ORANGE, ORANGE, ORANGE };
+        back = new ElementColor[]   { BLUE, BLUE, BLUE, BLUE };
     }
 
     public Cube(ElementColor[] front,
