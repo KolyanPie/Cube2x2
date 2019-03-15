@@ -90,7 +90,7 @@ public class CubeController {
         right[3] = temp_right;
     }
 
-    // -------------------------------Повороты куба по часовой стрелке------------------------------------
+    // -------------------------------Повороты граней куба по часовой стрелке------------------------------------
 
     private void moveCubeFront(Cube cube, boolean isClockWise) {
         if (!isClockWise) {
