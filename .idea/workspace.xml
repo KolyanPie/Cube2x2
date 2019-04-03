@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcfce186-aa14-48c3-8527-e1f32ab81098" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterPath="" />
+    <list default="true" id="fcfce186-aa14-48c3-8527-e1f32ab81098" name="Default Changelist" comment="rewritten Cube entity and controller">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/visual/AppFrame.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/visual/AppJavaFx.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/visual/CubePanel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/visual/controllers/MainController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/visual/nodes/RotateButton.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/visual/nodes/UnfoldedCubeCanvas.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/visual/Example.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/visual/Main.fxml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/cube2x2.test.main.kotlin_module" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Cube.java" afterPath="$PROJECT_DIR$/src/main/java/main/Cube.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/controllers/CubeController.java" afterPath="$PROJECT_DIR$/src/main/java/main/controllers/CubeController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/main/controllers/MainController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/controllers/MainController.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -71,21 +75,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/MainController.java">
+      <file leaf-file-name="CubeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/CubeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            <state relative-caret-position="176">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CubeController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/CubeController.java">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/visual/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="213" column="0" lean-forward="true" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+            <state relative-caret-position="473">
+              <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,8 +100,50 @@
       <file leaf-file-name="Cube.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Cube.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="201">
+              <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+              <folding>
+                <element signature="e#1572#1573#0" expanded="true" />
+                <element signature="e#1610#1611#0" expanded="true" />
+                <element signature="e#1647#1648#0" expanded="true" />
+                <element signature="e#1682#1683#0" expanded="true" />
+                <element signature="e#1722#1723#0" expanded="true" />
+                <element signature="e#1760#1761#0" expanded="true" />
+                <element signature="e#1799#1800#0" expanded="true" />
+                <element signature="e#1836#1837#0" expanded="true" />
+                <element signature="e#1875#1876#0" expanded="true" />
+                <element signature="e#1912#1913#0" expanded="true" />
+                <element signature="e#1951#1952#0" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2036#2037#0" expanded="true" />
+                <element signature="e#2073#2074#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnfoldedCubeCanvas.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/visual/nodes/UnfoldedCubeCanvas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/visual/Main.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="51" column="130" lean-forward="false" selection-start-line="51" selection-start-column="130" selection-end-line="51" selection-end-column="130" />
               <folding />
             </state>
           </provider>
@@ -111,6 +157,7 @@
         <option value="Kotlin File" />
         <option value="Enum" />
         <option value="Kotlin Class" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -472,17 +519,29 @@
         <option value="$PROJECT_DIR$/src/main/java/main/ElementColor.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Cube.kt" />
         <option value="$PROJECT_DIR$/src/main/java/main/DecisionFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/Cube.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/visual/AppFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/visual/CubePanel.java" />
+        <option value="$PROJECT_DIR$/src/main/resourses/Example.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resourses/main.visual/Example.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resourses/visual/Example.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/visual/Example.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Cube.java" />
+        <option value="$PROJECT_DIR$/src/main/java/visual/nodes/rotateButton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/visual/nodes/RotateButton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/visual/AppJavaFx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/visual/nodes/UnfoldedCubeCanvas.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/controllers/CubeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/visual/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/visual/Main.fxml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1060" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1612" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -550,14 +609,38 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="visual" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cube2x2_myFork" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="visual" type="462c0819:PsiDirectoryNode" />
+              <item name="nodes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cube2x2_myFork" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cube2x2_myFork" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="visual" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -567,6 +650,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\GitHub\Cube2x2_myFork\src\main\resources\visual" />
+      <recent name="D:\Programming\GitHub\Cube2x2_myFork\src\main\resourses\visual" />
+      <recent name="D:\Programming\GitHub\Cube2x2_myFork\src\main\resourses\main.visual" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -580,7 +674,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainController">
+  <component name="RunManager" selected="Application.AppJavaFx">
+    <configuration name="AppJavaFx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="visual.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="visual.AppJavaFx" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="cube2x2.test.main" />
+      <envs />
+    </configuration>
     <configuration name="MainController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
@@ -612,13 +725,15 @@
       <module name="cube2x2.test.main" />
       <envs />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.MainController" />
       <item index="1" class="java.lang.String" itemvalue="Kotlin.main.MainControllerKt" />
+      <item index="2" class="java.lang.String" itemvalue="Application.AppJavaFx" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.MainController" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.AppJavaFx" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MainController" />
       </list>
     </recent_temporary>
   </component>
@@ -646,7 +761,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552668532755</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix">
+      <created>1552672311887</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552672311887</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -656,34 +778,34 @@
     <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.49361023" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33229813" sideWeight="0.5106496" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33229813" sideWeight="0.48935038" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2683706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958593" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,7 +816,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add visualization" />
-    <option name="LAST_COMMIT_MESSAGE" value="add visualization" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="rewritten Cube entity and controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewritten Cube entity and controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -703,11 +827,197 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/CubeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/AppFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/AppJavaFx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/visual/Example.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/CubeFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/CubePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/visual/Main.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/AppFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/CubeFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/CubePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/AppJavaFx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Cube.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/CubeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="57" column="23" lean-forward="false" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Cube.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/CubeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="89" column="27" lean-forward="true" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Cube.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/CubeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3536">
+          <caret line="221" column="40" lean-forward="true" selection-start-line="221" selection-start-column="40" selection-end-line="221" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/ElementColor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +1026,7 @@
         <state relative-caret-position="3648">
           <caret line="233" column="37" lean-forward="false" selection-start-line="233" selection-start-column="37" selection-end-line="233" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -725,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,6 +1051,46 @@
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/main/MainController.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/Cube.kt" />
     <entry file="jar://C:/Jdk/src.zip!/java/lang/Object.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="189" column="23" lean-forward="false" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resourses.properties" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/awt/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/CubePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/visual/Example.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/DecisionFinder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -754,41 +1103,326 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/scene/control/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="70" column="11" lean-forward="false" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
+          <folding>
+            <element signature="e#2115#2116#0" expanded="false" />
+            <element signature="e#2143#2144#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/nodes/RotateButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/visual/CubeFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="272">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Cube.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/AppFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="64">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/AppJavaFx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/scene/layout/GridPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4893">
+          <caret line="259" column="13" lean-forward="false" selection-start-line="259" selection-start-column="13" selection-end-line="259" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#GridPane#0" expanded="false" />
+            <element signature="docComment;field#REMAINING#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;field#MARGIN_CONSTRAINT#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setRowIndex#0;class#GridPane#0" expanded="false" />
+            <element signature="method#setRowIndex#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getRowIndex#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setColumnIndex#0;class#GridPane#0" expanded="false" />
+            <element signature="method#setColumnIndex#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getColumnIndex#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setRowSpan#0;class#GridPane#0" expanded="false" />
+            <element signature="method#setRowSpan#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getRowSpan#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setColumnSpan#0;class#GridPane#0" expanded="false" />
+            <element signature="method#setColumnSpan#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getColumnSpan#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setMargin#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getMargin#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getBaselineComplementForChild#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setHalignment#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getHalignment#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setValignment#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getValignment#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setHgrow#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getHgrow#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setVgrow#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getVgrow#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setFillWidth#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#isFillWidth#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setFillHeight#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#isFillHeight#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setConstraints#0;class#GridPane#0" expanded="false" />
+            <element signature="method#setConstraints#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setConstraints#1;class#GridPane#0" expanded="false" />
+            <element signature="method#setConstraints#1;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setConstraints#2;class#GridPane#0" expanded="false" />
+            <element signature="method#setConstraints#2;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setConstraints#3;class#GridPane#0" expanded="false" />
+            <element signature="method#setConstraints#3;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#setConstraints#4;class#GridPane#0" expanded="false" />
+            <element signature="method#setConstraints#4;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#clearConstraints#0;class#GridPane#0" expanded="false" />
+            <element signature="method#clearConstraints#0;class#GridPane#0" expanded="false" />
+            <element signature="method#createRow#0;class#GridPane#0" expanded="false" />
+            <element signature="method#createColumn#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNodeRowIndex#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNodeRowSpan#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNodeRowEnd#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNodeColumnIndex#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNodeColumnSpan#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNodeColumnEnd#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNodeHgrow#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNodeVgrow#0;class#GridPane#0" expanded="false" />
+            <element signature="method#createPriorityArray#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#GridPane#0;class#GridPane#0" expanded="false" />
+            <element signature="method#GridPane#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#hgapProperty#0;class#GridPane#0" expanded="false" />
+            <element signature="method#hgapProperty#0;class#GridPane#0" expanded="false" />
+            <element signature="class#31166:31754" expanded="false" />
+            <element signature="method#setHgap#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getHgap#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#vgapProperty#0;class#GridPane#0" expanded="false" />
+            <element signature="method#vgapProperty#0;class#GridPane#0" expanded="false" />
+            <element signature="class#32148:32736" expanded="false" />
+            <element signature="method#setVgap#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getVgap#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#alignmentProperty#0;class#GridPane#0" expanded="false" />
+            <element signature="method#alignmentProperty#0;class#GridPane#0" expanded="false" />
+            <element signature="class#33173:33784" expanded="false" />
+            <element signature="method#getAlignmentInternal#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#gridLinesVisibleProperty#0;class#GridPane#0" expanded="false" />
+            <element signature="method#gridLinesVisibleProperty#0;class#GridPane#0" expanded="false" />
+            <element signature="class#34524:35481" expanded="false" />
+            <element signature="method#invalidated#0;class#34524:35481" expanded="false" />
+            <element signature="method#getCssMetaData#0;class#34524:35481" expanded="false" />
+            <element signature="method#setGridLinesVisible#0;class#GridPane#0" expanded="false" />
+            <element signature="method#isGridLinesVisible#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;field#rowConstraints#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getRowConstraints#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getRowConstraints#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;field#columnConstraints#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getColumnConstraints#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getColumnConstraints#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#GridPane#0" expanded="false" />
+            <element signature="method#add#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#add#1;class#GridPane#0" expanded="false" />
+            <element signature="method#add#1;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#addRow#0;class#GridPane#0" expanded="false" />
+            <element signature="method#addRow#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#addColumn#0;class#GridPane#0" expanded="false" />
+            <element signature="method#addColumn#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNumberOfRows#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNumberOfColumns#0;class#GridPane#0" expanded="false" />
+            <element signature="method#isNodePositionedByBaseline#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computeGridMetrics#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computeMinWidth#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computeMinHeight#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computePrefWidth#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computePrefHeight#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getRowValignment#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getColumnHalignment#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getColumnMinWidth#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getRowMinHeight#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getColumnMaxWidth#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getColumnPrefWidth#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getRowPrefHeight#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getRowMaxHeight#0;class#GridPane#0" expanded="false" />
+            <element signature="method#shouldRowFillHeight#0;class#GridPane#0" expanded="false" />
+            <element signature="method#shouldColumnFillWidth#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getTotalWidthOfNodeColumns#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computeMaxHeights#0;class#GridPane#0" expanded="false" />
+            <element signature="e#55422#55472#0" expanded="false" />
+            <element signature="method#computePrefHeights#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computeMinHeights#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getTotalHeightOfNodeRows#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computeMaxWidths#0;class#GridPane#0" expanded="false" />
+            <element signature="e#61422#61472#0" expanded="false" />
+            <element signature="method#computePrefWidths#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computeMinWidths#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computeHeightsToFit#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computeWidthsToFit#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getContentBias#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getContentBias#0;class#GridPane#0" expanded="false" />
+            <element signature="method#requestLayout#0;class#GridPane#0" expanded="false" />
+            <element signature="e#68294#68363#0" expanded="false" />
+            <element signature="method#layoutChildren#0;class#GridPane#0" expanded="false" />
+            <element signature="e#73689#74405#0" expanded="false" />
+            <element signature="e#74478#74816#0" expanded="false" />
+            <element signature="method#adjustRowHeights#0;class#GridPane#0" expanded="false" />
+            <element signature="method#growToMultiSpanPreferredHeights#0;class#GridPane#0" expanded="false" />
+            <element signature="method#growOrShrinkRowHeights#0;class#GridPane#0" expanded="false" />
+            <element signature="e#84316#84379#0" expanded="false" />
+            <element signature="e#85452#85487#0" expanded="false" />
+            <element signature="method#adjustColumnWidths#0;class#GridPane#0" expanded="false" />
+            <element signature="method#growToMultiSpanPreferredWidths#0;class#GridPane#0" expanded="false" />
+            <element signature="method#growOrShrinkColumnWidths#0;class#GridPane#0" expanded="false" />
+            <element signature="e#95674#95737#0" expanded="false" />
+            <element signature="e#96807#96842#0" expanded="false" />
+            <element signature="method#layoutGridLines#0;class#GridPane#0" expanded="false" />
+            <element signature="method#createGridLine#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#GridPane#0" expanded="false" />
+            <element signature="method#toString#0;class#GridPane#0" expanded="false" />
+            <element signature="method#createCompositeRows#0;class#GridPane#0" expanded="false" />
+            <element signature="method#createCompositeColumns#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNodeRowEndConvertRemaining#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getNodeColumnEndConvertRemaining#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getGrid#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;class#StyleableProperties#0;class#GridPane#0" expanded="false" />
+            <element signature="class#StyleableProperties#0;class#GridPane#0" expanded="false" />
+            <element signature="class#102128:102671" expanded="false" />
+            <element signature="method#isSettable#0;class#102128:102671" expanded="false" />
+            <element signature="method#getStyleableProperty#0;class#102128:102671" expanded="false" />
+            <element signature="class#102757:103210" expanded="false" />
+            <element signature="method#getStyleableProperty#0;class#102757:103210" expanded="false" />
+            <element signature="class#103298:103778" expanded="false" />
+            <element signature="method#getStyleableProperty#0;class#103298:103778" expanded="false" />
+            <element signature="class#103864:104317" expanded="false" />
+            <element signature="method#getStyleableProperty#0;class#103864:104317" expanded="false" />
+            <element signature="initializer##0;class#StyleableProperties#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getClassCssMetaData#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getClassCssMetaData#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#getCssMetaData#0;class#GridPane#0" expanded="false" />
+            <element signature="class#Interval#0;class#GridPane#0" expanded="false" />
+            <element signature="method#Interval#0;class#Interval#0;class#GridPane#0" expanded="false" />
+            <element signature="class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="method#CompositeSize#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="method#setPresetSize#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="method#isPreset#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="method#setMaxSize#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="method#setMultiSize#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="method#multiSizes#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="method#setMaxMultiSize#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="method#getProportionalMinOrMaxSize#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computeTotal#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="method#allPreset#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="method#computeTotalWithMultiSize#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="e#111364#111469#0" expanded="false" />
+            <element signature="method#clone#0;class#CompositeSize#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#impl_getRowCount#0;class#GridPane#0" expanded="false" />
+            <element signature="method#impl_getRowCount#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#impl_getColumnCount#0;class#GridPane#0" expanded="false" />
+            <element signature="method#impl_getColumnCount#0;class#GridPane#0" expanded="false" />
+            <element signature="docComment;method#impl_getCellBounds#0;class#GridPane#0" expanded="false" />
+            <element signature="method#impl_getCellBounds#0;class#GridPane#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/event/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state relative-caret-position="176">
+          <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Cube.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding>
+            <element signature="e#1572#1573#0" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1647#1648#0" expanded="true" />
+            <element signature="e#1682#1683#0" expanded="true" />
+            <element signature="e#1722#1723#0" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="true" />
+            <element signature="e#1799#1800#0" expanded="true" />
+            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1875#1876#0" expanded="true" />
+            <element signature="e#1912#1913#0" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="e#2036#2037#0" expanded="true" />
+            <element signature="e#2073#2074#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/nodes/UnfoldedCubeCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/controllers/CubeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="213" column="0" lean-forward="true" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visual/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/visual/Main.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="51" column="130" lean-forward="false" selection-start-line="51" selection-start-column="130" selection-end-line="51" selection-end-column="130" />
+          <folding />
         </state>
       </provider>
     </entry>

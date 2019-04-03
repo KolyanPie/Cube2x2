@@ -3,25 +3,27 @@ package main;
 import static main.ElementColor.*;
 
 public class Cube {
-    private ElementColor[] front;
-    private ElementColor[] up;
-    private ElementColor[] right;
-    private ElementColor[] down;
-    private ElementColor[] left;
-    private ElementColor[] back;
+    public static final byte UP = 0;
+    public static final byte FRONT = 1;
+    public static final byte DOWN = 2;
+    public static final byte BACK = 3;
+    public static final byte RIGHT = 4;
+    public static final byte LEFT = 5;
+
+    private ElementColor[][] elements;
 
     /**
      * Цвета в плоскости обозначены в следющем порядке:
-     * 0, 1,
+     * 1, 0,
      * 2, 3
      */
     public Cube() {
-        front = new ElementColor[]  { GREEN, GREEN, GREEN, GREEN };
-        up = new ElementColor[]    { WHITE, WHITE, WHITE, WHITE };
-        right = new ElementColor[]  { RED, RED, RED, RED };
-        down = new ElementColor[]    { YELLOW, YELLOW, YELLOW, YELLOW };
-        left = new ElementColor[]   { ORANGE, ORANGE, ORANGE, ORANGE };
-        back = new ElementColor[]   { BLUE, BLUE, BLUE, BLUE };
+        this(new ElementColor[]{GREEN, GREEN, GREEN, GREEN},
+                new ElementColor[]{WHITE, WHITE, WHITE, WHITE},
+                new ElementColor[]{RED, RED, RED, RED},
+                new ElementColor[]{YELLOW, YELLOW, YELLOW, YELLOW},
+                new ElementColor[]{ORANGE, ORANGE, ORANGE, ORANGE},
+                new ElementColor[]{BLUE, BLUE, BLUE, BLUE});
     }
 
     public Cube(ElementColor[] front,
@@ -31,35 +33,46 @@ public class Cube {
                 ElementColor[] left,
                 ElementColor[] back
     ) {
-        this.front = front;
-        this.up = up;
-        this.right = right;
-        this.down = down;
-        this.left = left;
-        this.back = back;
+        elements = new ElementColor[][]{
+                new ElementColor[4],
+                new ElementColor[4],
+                new ElementColor[4],
+                new ElementColor[4],
+                new ElementColor[4],
+                new ElementColor[4],};
+        elements[FRONT] = front;
+        elements[UP] = up;
+        elements[RIGHT] = right;
+        elements[DOWN] = down;
+        elements[LEFT] = left;
+        elements[BACK] = back;
     }
 
     public ElementColor[] getFront() {
-        return front;
+        return elements[FRONT];
     }
 
     public ElementColor[] getUp() {
-        return up;
+        return elements[UP];
     }
 
     public ElementColor[] getRight() {
-        return right;
+        return elements[RIGHT];
     }
 
     public ElementColor[] getDown() {
-        return down;
+        return elements[DOWN];
     }
 
     public ElementColor[] getLeft() {
-        return left;
+        return elements[LEFT];
     }
 
     public ElementColor[] getBack() {
-        return back;
+        return elements[BACK];
+    }
+
+    public ElementColor[] getSide(byte side) {
+        return elements[side];
     }
 }
