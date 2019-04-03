@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.text.Text?>
+<Scene xmlns="http://javafx.com/javafx"
+       width="300.0" height="120.0">
+    <StackPane>
+        <Text>Hello world</Text>
+    </StackPane>
+</Scene>

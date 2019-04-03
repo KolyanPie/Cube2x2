@@ -10,7 +10,7 @@ public class Cube {
     public static final byte RIGHT = 4;
     public static final byte LEFT = 5;
 
-    private ElementColor[][] elements;
+    private final ElementColor[][] elements;
 
     /**
      * Цвета в плоскости обозначены в следющем порядке:
