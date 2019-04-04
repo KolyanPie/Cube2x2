@@ -86,9 +86,7 @@ public class CubeController {
                 if (isClockWise) {
                     rotateUFBD(cube, side);
                 } else {
-                    rotateUFBD(cube, side);
-                    rotateUFBD(cube, side);
-                    rotateUFBD(cube, side);
+                    rotateCounterUFBD(cube, side);
                 }
                 break;
         }
@@ -156,5 +154,21 @@ public class CubeController {
         right[(1 + side) % 4] = temp_right;
     }
 
-    //TODO: create method rotateCounterUFBD(Cube cube, byte side)
+    private void rotateCounterUFBD(Cube cube, byte side) {
+        ElementColor[] up = cube.getSide((byte) ((side + 3) % 4));
+        ElementColor[] down = cube.getSide((byte) ((side + 1) % 4));
+        ElementColor[] left = cube.getLeft();
+        ElementColor[] right = cube.getRight();
+        ElementColor temp_left = up[2];
+        ElementColor temp_right = up[3];
+        // swapping:
+        up[2] = right[side % 4];
+        up[3] = right[(1 + side) % 4];
+        right[side % 4] = down[0];
+        right[(1 + side) % 4] = down[1];
+        down[0] = left[(4 - side) % 4];
+        down[1] = left[(5 - side) % 4];
+        left[(4 - side) % 4] = temp_left;
+        left[(5 - side) % 4] = temp_right;
+    }
 }
