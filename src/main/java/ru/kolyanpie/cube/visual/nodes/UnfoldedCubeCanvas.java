@@ -45,7 +45,7 @@ public class UnfoldedCubeCanvas extends Canvas {
                     context.setFill(Color.YELLOW);
                     break;
             }
-            context.fillRect(x + ((1 - (double) i / 2) * (1 - i % 2) + ((double) i / 2) * (i % 2)) * 48 + 2, y + ((double) i / 2) * 48 + 2, 46, 46);
+            context.fillRect(x + ((1 - i / 2) * (1 - i % 2) + (i / 2) * (i % 2)) * 48 + 2, y + (i / 2) * 48 + 2, 46, 46);
         }
     }
 }
