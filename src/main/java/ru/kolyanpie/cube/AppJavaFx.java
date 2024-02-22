@@ -1,4 +1,4 @@
-package visual;
+package ru.kolyanpie.cube;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -9,8 +9,9 @@ import javafx.stage.Stage;
 public class AppJavaFx extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent panel = FXMLLoader.load(getClass().getResource("/visual/Main.fxml"));
-        Scene scene =  new Scene(panel);
+        FXMLLoader fxmlLoader = new FXMLLoader(AppJavaFx.class.getResource("main.fxml"));
+        Parent panel = fxmlLoader.load();
+        Scene scene = new Scene(panel);
         primaryStage.setTitle("Cube 2x2 app");
         primaryStage.setScene(scene);
         primaryStage.centerOnScreen();

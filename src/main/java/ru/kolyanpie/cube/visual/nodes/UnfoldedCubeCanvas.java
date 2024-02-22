@@ -1,10 +1,10 @@
-package visual.nodes;
+package ru.kolyanpie.cube.visual.nodes;
 
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
-import main.Cube;
-import main.ElementColor;
+import ru.kolyanpie.cube.core.Cube;
+import ru.kolyanpie.cube.core.ElementColor;
 
 public class UnfoldedCubeCanvas extends Canvas {
 
@@ -45,7 +45,7 @@ public class UnfoldedCubeCanvas extends Canvas {
                     context.setFill(Color.YELLOW);
                     break;
             }
-            context.fillRect(x + ((1 - i / 2) * (1 - i % 2) + (i / 2) * (i % 2)) * 48 + 2, y + (i / 2) * 48 + 2, 46, 46);
+            context.fillRect(x + ((1 - (double) i / 2) * (1 - i % 2) + ((double) i / 2) * (i % 2)) * 48 + 2, y + ((double) i / 2) * 48 + 2, 46, 46);
         }
     }
 }

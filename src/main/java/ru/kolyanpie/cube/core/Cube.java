@@ -1,6 +1,6 @@
-package main;
+package ru.kolyanpie.cube.core;
 
-import static main.ElementColor.*;
+import static ru.kolyanpie.cube.core.ElementColor.*;
 
 public class Cube {
     public static final byte UP = 0;
