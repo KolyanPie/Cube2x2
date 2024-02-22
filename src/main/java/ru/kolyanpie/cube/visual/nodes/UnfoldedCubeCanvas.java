@@ -1,10 +1,10 @@
-package visual.nodes;
+package ru.kolyanpie.cube.visual.nodes;
 
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
-import main.Cube;
-import main.ElementColor;
+import ru.kolyanpie.cube.core.Cube;
+import ru.kolyanpie.cube.core.ElementColor;
 
 public class UnfoldedCubeCanvas extends Canvas {
 

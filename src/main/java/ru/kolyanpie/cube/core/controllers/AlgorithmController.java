@@ -1,10 +1,10 @@
-package main.controllers;
+package ru.kolyanpie.cube.core.controllers;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class AlgorithmController {
-    private ArrayList<String> rotates;
+    private final ArrayList<String> rotates;
     public static final List<String> cube2x2x2 = Arrays.asList("U", "R", "F", "U'", "R'", "F'", "D", "L", "B", "D'", "L'", "B'", "U2", "R2", "F2", "D2", "L2", "B2");
 
     public AlgorithmController(List<String> rotates) {
@@ -12,7 +12,7 @@ public class AlgorithmController {
     }
 
     public String simplify(String algorithm) throws IllegalArgumentException {
-        if (algorithm.equals("")) {
+        if (algorithm.isEmpty()) {
             return "";
         }
         String[] strings = algorithm.split(" ");
@@ -33,7 +33,7 @@ public class AlgorithmController {
     }
 
     private void simplifyPare(ArrayList<String> algorithm) throws IllegalArgumentException {
-        if (algorithm.size() == 0) {
+        if (algorithm.isEmpty()) {
             return;
         }
         String s = algorithm.get(0);
@@ -61,7 +61,7 @@ public class AlgorithmController {
                         case '2':
                             algorithm.remove(i);
                             algorithm.remove(i - 1);
-                            algorithm.add(i - 1, s.substring(0, 1) + "'");
+                            algorithm.add(i - 1, s.charAt(0) + "'");
                             return;
                     }
                 }
@@ -77,7 +77,7 @@ public class AlgorithmController {
                                 case '\'':
                                     algorithm.remove(i);
                                     algorithm.remove(i - 1);
-                                    algorithm.add(i - 1, s.substring(0, 1) + "2");
+                                    algorithm.add(i - 1, s.charAt(0) + "2");
                                     return;
                                 case '2':
                                     algorithm.remove(i);
@@ -89,7 +89,7 @@ public class AlgorithmController {
                             if (s.length() == 1) {
                                 algorithm.remove(i);
                                 algorithm.remove(i - 1);
-                                algorithm.add(i - 1, s.substring(0, 1) + "'");
+                                algorithm.add(i - 1, s.charAt(0) + "'");
                                 return;
                             }
                             switch (s.charAt(1)) {

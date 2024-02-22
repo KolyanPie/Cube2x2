@@ -1,7 +1,7 @@
-package main.controllers;
+package ru.kolyanpie.cube.core.controllers;
 
-import main.Cube;
-import main.ElementColor;
+import ru.kolyanpie.cube.core.Cube;
+import ru.kolyanpie.cube.core.ElementColor;
 
 import java.util.Arrays;
 import java.util.HashSet;

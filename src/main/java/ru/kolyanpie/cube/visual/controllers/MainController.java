@@ -1,8 +1,5 @@
-package visual.controllers;
+package ru.kolyanpie.cube.visual.controllers;
 
-import com.sun.javafx.tk.Toolkit;
-import javafx.concurrent.Service;
-import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
@@ -11,10 +8,10 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
-import main.Cube;
-import main.controllers.AlgorithmController;
-import main.controllers.CubeController;
-import visual.nodes.UnfoldedCubeCanvas;
+import ru.kolyanpie.cube.core.Cube;
+import ru.kolyanpie.cube.core.controllers.AlgorithmController;
+import ru.kolyanpie.cube.core.controllers.CubeController;
+import ru.kolyanpie.cube.visual.nodes.UnfoldedCubeCanvas;
 
 public class MainController {
     private Cube cube;
@@ -43,7 +40,7 @@ public class MainController {
             button.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
                 cubeController.rotate(cube, ((Button) button).getText());
                 cubeCanvas.drawCube(cube);
-                if (label.getText().equals("")) {
+                if (label.getText().isEmpty()) {
                     label.setText(((Button) button).getText());
                 } else {
                     label.setText(label.getText() + " " + ((Button) button).getText());

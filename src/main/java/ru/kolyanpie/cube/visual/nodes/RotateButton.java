@@ -1,4 +1,4 @@
-package visual.nodes;
+package ru.kolyanpie.cube.visual.nodes;
 
 import javafx.scene.Cursor;
 import javafx.scene.control.Button;

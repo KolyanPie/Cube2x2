@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import visual.nodes.RotateButton?>
-<?import visual.nodes.UnfoldedCubeCanvas?>
+<?import ru.kolyanpie.cube.visual.nodes.RotateButton?>
+<?import ru.kolyanpie.cube.visual.nodes.UnfoldedCubeCanvas?>
 
-<AnchorPane prefHeight="401.0" prefWidth="397.0" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="visual.controllers.MainController">
+<AnchorPane prefHeight="401.0" prefWidth="397.0" xmlns="http://javafx.com/fxml"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kolyanpie.cube.visual.controllers.MainController">
     <UnfoldedCubeCanvas fx:id="cubeCanvas" height="401.0" width="301.0"/>
     <GridPane fx:id="buttonPane" layoutX="301.0" prefHeight="270.0" prefWidth="192.0">
         <columnConstraints>
@@ -61,7 +61,7 @@
     <Button fx:id="resetButton" mnemonicParsing="false">
         <graphic>
             <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                <Image backgroundLoading="true" url="/../resources/images/reset.png"/>
+                <Image backgroundLoading="true" url="/images/reset.png"/>
             </ImageView>
         </graphic>
     </Button>

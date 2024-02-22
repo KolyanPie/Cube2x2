@@ -1,4 +1,4 @@
-package main;
+package ru.kolyanpie.cube.core;
 
 public enum ElementColor {
     WHITE,
